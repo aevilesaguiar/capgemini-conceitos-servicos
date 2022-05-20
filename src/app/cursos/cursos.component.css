@@ -1,0 +1,39 @@
+form{
+    width: 700px;
+    margin: 30px auto;
+    border: solid 1px #ccc;
+    background-color: #e8e8e8;
+    font-size: 1.5em;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+input{
+    margin: 20px;
+    margin-left: 50px;
+    width: 600px;
+    height: 30px;
+    border:solid 1px #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btn{
+    background-color: rgb(255, 77, 0);
+    color: aliceblue;
+    height: 40px;
+    font-size: 1.25rem;
+}
+
+table{
+    margin: 20px;
+    width: 800px;
+    height: 30px;
+    border:solid 1px #ccc;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+.tb-info{
+    margin-left: 550px;
+}
