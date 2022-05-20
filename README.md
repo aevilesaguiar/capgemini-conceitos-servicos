@@ -1,27 +1,26 @@
-# Exemplo06
+## Curso capgemini start - Angular (service)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 
-## Development server
+Um serviço Angular é um objeto sem estado e fornece algumas funções muito úteis. Essas funções podem ser chamadas de qualquer componente do Angular, como controladores, diretivas, etc. Isso ajuda a dividir o aplicativo da web em unidades lógicas pequenas e diferentes que podem ser reutilizadas.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Conforme a Arquitetura do Angular a utilização de Serviços tem o propósito de organizar o projeto de software Angular, isolando lógica de negócio e separando-a dos Controllers.
 
-## Code scaffolding
+No arquivo ex: curso.services.ts 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+teremos o:
 
-## Build
+@Injectable({
+  providedIn: 'root' //o injectable vai dizer o que esse serviço vai ter acesso, o padrão é root
+                    //nesse caso ele tem acesso total do serviço
+})
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## modelo (model)
 
-## Running unit tests
+O AngularJS usa a arquitetura Model-View-Controller (MCV), que é usado no desenvolvimento de apps para a internet. Esse tipo de arquitetura consiste em: Model (Modelo) – a estrutura de dados que gerencia a informação e recebe comandos do controle. View (Visão) – a representação da informação.
+Controller (Controle) – responde aos comandos e interage com o modelo.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Os modelos no AngularJS são simplesmente um arquivo HTML preenchido ou enriquecido com coisas do AngularJS, como atributos e diretivas. Uma diretiva é um elemento marcador usado para direcionar um determinado atributo ou classe para processar seu comportamento de acordo com as necessidades. O modelo e o controlador no Angular são combinados com os modelos para manipular a visualização que o usuário vê em seu navegador. Os modelos angulares também podem acomodar CSS , controles de formulário , filtros e expressões .
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Cada curso cadastrado será um objeto, e cada objeto tem suas caracteríticas
