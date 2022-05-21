@@ -15,9 +15,9 @@ export class CursosService {
 
   //vetor de cursos
   public vetorCursos:Curso[] = [
-    new Curso("Angular",800,"Desenvolvimento"),
-    new Curso("Java",890,"Desenvolvimento"),
-    new Curso("Photoshop",500,"Designer")
+    new Curso(  "Angular", 800, "Desenvolvimento" ),
+    new Curso( "Java",  890,  "Desenvolvimento" ),
+    new Curso(  "Photoshop",500,  "Designer" )
     
   ];
 
@@ -34,14 +34,16 @@ export class CursosService {
 
 
   //alteração de cursos
-  public alterar(id:number, curso:Curso){
+  public alterar(id:number, curso:Curso){//alterar recebe o id da linha e o nome do objeto
     return this.vetorCursos[id]=curso;//pega o vetor na posição do id e vou colocar um novo curso/valor ou area
   }
 
   //exclusão de cursos
 
-  public excluir(id:number){
+  public excluir(id:number){ //ele vai pegar a partir do indice 0 e excluir 1 elemento o splice(id,1)
     return this.vetorCursos.splice(id,1);//O método splice() altera o conteúdo de uma lista, adicionando novos elementos enquanto remove elementos antigos.
   }
+
+
 
 }

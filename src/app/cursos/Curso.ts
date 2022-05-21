@@ -8,13 +8,9 @@ export class Curso{
     
     //Constructor
     constructor(nome:string, valor:number, area:string){
-        this.nomeCurso=nome;
-        this.valorCurso=valor;
-        this.areaCurso=area;
-    }
-
-    construtor(){
-        
+     this.nomeCurso=nome;
+     this.valorCurso=valor;
+     this.areaCurso=area;
     }
 
 
